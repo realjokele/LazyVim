@@ -8,3 +8,6 @@ vim.lsp.util.open_floating_preview = (function(orig)
     return orig(contents, syntax, opts, ...)
   end
 end)(vim.lsp.util.open_floating_preview)
+
+-- Disable animations
+vim.g.snacks_animate = false
